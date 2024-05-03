@@ -33,4 +33,13 @@ public class ListaCantantesFamosos {
         }
         return null;
     }
+    public void modificarCantanteFamoso(String nombre, String discoConMasVentas, int ventas) {
+        for (CantanteFamoso cantanteFamosoACambiar : listaCantantesFamosos) {
+            if (cantanteFamosoACambiar.getNombre().equals(nombre)) {
+                cantanteFamosoACambiar.setDiscoConMasVentas(discoConMasVentas);
+                cantanteFamosoACambiar.setVentas(ventas);
+                break;
+            }
+        }
+    }
 }

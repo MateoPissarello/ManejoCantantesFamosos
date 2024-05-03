@@ -3,10 +3,12 @@ package Dominio;
 public class CantanteFamoso {
     private String nombre;
     private String discoConMasVentas;
+    private int ventas;
 
-    public CantanteFamoso(String nombre, String discoConMasVentas) {
+    public CantanteFamoso(String nombre, String discoConMasVentas, int ventas) {
         this.nombre = nombre;
         this.discoConMasVentas = discoConMasVentas;
+        this.ventas = ventas;
     }
 
     public String getNombre() {
@@ -23,6 +25,14 @@ public class CantanteFamoso {
 
     public void setDiscoConMasVentas(String discoConMasVentas) {
         this.discoConMasVentas = discoConMasVentas;
+    }
+
+    public int getVentas() {
+        return ventas;
+    }
+
+    public void setVentas(int ventas) {
+        this.ventas = ventas;
     }
 
     @Override
